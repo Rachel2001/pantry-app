@@ -1,5 +1,12 @@
-export default function Home() {
+import React, { memo } from "react";
+import Background from "../Background";
+
+const HomePage = memo(function HomePage() {
   return (
-    <main></main>
+    <div>
+      <Background />
+    </div>
   );
-}
+});
+
+export default HomePage;
